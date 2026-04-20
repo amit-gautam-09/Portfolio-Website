@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- SEO Meta Tags -->
+  <title>Amit Gautam ,  Product Manager | Founder-turned-PM</title>
+  <meta name="description" content="Amit Gautam is a Product Manager with 1.8 years of founding experience. Scaled an EdTech SaaS to 5,000+ users and ₹2.5 Cr valuation. Open to PM &  internships." />
+  <meta name="keywords" content="Amit Gautam, Product Manager, , EdTech, Startup, DTU, Delhi Technological University, Portfolio" />
+  <meta name="author" content="Amit Gautam" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Amit Gautam ,  Product Manager Portfolio" />
+  <meta property="og:description" content="Founder-turned-PM. 5,000+ users, ₹2.5 Cr valuation, 18 months. Now building the next thing." />
+  <meta property="og:type" content="website" />
+  <!-- REPLACE: update og:url with your actual deployed URL -->
+  <meta property="og:url" content="https://amitgautam.dev" />
+
+  <!-- Canonical -->
+  <!-- REPLACE: update href with your actual deployed URL -->
+  <link rel="canonical" href="https://amitgautam.dev" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/amit_avatar_image.png" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-logo" id="nav-logo" onclick="scrollToTop()" aria-label="Amit Gautam ,  scroll to top">
+      <img src="assets/amit_avatar_image.png" alt="Amit Gautam Logo" style="height: 36px; width: 36px; border-radius: 50%; object-fit: cover; display: block;" />
+    </div>
+
+    <ul class="nav-links" role="list">
+      <li><a href="#about"      id="nav-about"      aria-label="Navigate to About section">About</a></li>
+      <li><a href="#experience" id="nav-experience"  aria-label="Navigate to Experience section">Experience</a></li>
+      <li><a href="#projects"   id="nav-projects"   aria-label="Navigate to Projects section">Projects</a></li>
+      <li><a href="#skills"     id="nav-skills"     aria-label="Navigate to Skills section">Skills</a></li>
+      <li><a href="#contact"    id="nav-contact"    aria-label="Navigate to Contact section">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button id="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+        <!-- Icon swaps via JS -->
+        <span id="theme-icon">☀️</span>
+      </button>
+      <button id="hamburger" aria-label="Open mobile menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" role="dialog" aria-label="Mobile navigation" aria-modal="true">
+    <a href="#about"      onclick="closeMobileMenu()">About</a>
+    <a href="#experience" onclick="closeMobileMenu()">Experience</a>
+    <a href="#projects"   onclick="closeMobileMenu()">Projects</a>
+    <a href="#skills"     onclick="closeMobileMenu()">Skills</a>
+    <a href="#contact"    onclick="closeMobileMenu()">Contact</a>
+  </div>
+
+  <!-- ============================================================
+       MAIN CONTENT
+       ============================================================ -->
+  <main id="main-content">
+
+    <!-- ============================================================
+         1. HERO SECTION
+         ============================================================ -->
+    <section id="hero" aria-label="Hero ,  introduction">
+      <div class="hero-bg" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+
+            <h1 class="hero-name">Amit Gautam</h1>
+            <p class="hero-role">Product Manager</p>
+
+            <p class="hero-tagline">
+              From 0 to 5,000+ users. From concept to ₹2.5 Cr valuation.<br />
+              Now building the next thing.
+            </p>
+
+            <p class="hero-body">
+              Founder-turned-PM with <strong>1.8 years</strong> building EdTech SaaS from scratch.<br />
+              I obsess over user problems, ship fast, and measure everything.<br />
+              Currently: <strong>3rd-year Engineering @ DTU</strong> | Open to PM internships.
+            </p>
+
+            <div class="hero-ctas">
+              <a href="#projects" class="btn btn-primary" id="hero-cta-work" aria-label="View my work ,  scroll to projects">
+                View My Work
+                <span aria-hidden="true">↓</span>
+              </a>
+              <a href="assets/Amit_Gautam_Product_Manager_Intern_Resume.pdf" class="btn btn-secondary" id="hero-cta-resume" download aria-label="Download Amit Gautam's resume PDF">
+                Download Resume
+                <span aria-hidden="true">↗</span>
+              </a>
+              <!-- REPLACE: update resume.pdf link with your actual resume file path -->
+            </div>
+          </div>
+          <div class="hero-image-wrap fade-up">
+            <img src="assets/Amit_Profile_Image.png" alt="Amit Gautam Profile" class="hero-image" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         2. ABOUT SECTION
+         ============================================================ -->
+    <section id="about" aria-label="About Amit Gautam">
+      <div class="container">
+        <span class="section-label fade-up">Who I Am</span>
+        <h2 class="section-title fade-up">About</h2>
+
+        <div class="about-grid">
+          <!-- Avatar Column -->
+          <div class="about-avatar-wrap fade-up">
+            <div class="about-avatar" aria-label="Amit Gautam avatar" role="img">
+              <img src="assets/amit_avatar_image.png" alt="Amit Gautam headshot" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;" />
+            </div>
+            <p class="about-location">
+              <span aria-hidden="true">📍</span>
+              New Delhi, India
+            </p>
+          </div>
+
+          <!-- Text Column -->
+          <div class="about-text">
+            <p class="fade-up">
+              I'm a product manager who built a company before knowing what a PRD was.
+            </p>
+            <p class="fade-up">
+              As Founder &amp; CEO of <strong>Distance Connect</strong> (Skillzia Education Technologies), I led a cross-functional team of 8, ran <strong>500+ user interviews</strong>, defined north star metrics, shipped <strong>15+ features</strong>, and grew the platform to <strong>5,000+ active users</strong> and <strong>₹2.5 Cr in valuation</strong> ,  all while studying engineering at DTU.
+            </p>
+            <p class="fade-up">
+              I've since closed the company and redirected that energy toward PM roles where I can apply these skills at scale. I'm especially interested in <strong>AI-native products</strong>, EdTech, and platforms with strong data flywheels.
+            </p>
+            <p class="fade-up">
+              My edge: I've been the PM, the founder, the growth marketer, and the stakeholder manager ,  often all in the same week.
+            </p>
+
+            <!-- Stats Bar -->
+            <div class="stats-bar fade-up" aria-label="Key metrics">
+              <div class="stat-item">
+                <span class="stat-number" aria-label="500 plus user interviews">500+</span>
+                <span class="stat-label">User Interviews</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" aria-label="5000 plus active users">5,000+</span>
+                <span class="stat-label">Active Users</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" aria-label="2.5 crore rupees product valuation">₹2.5 Cr</span>
+                <span class="stat-label">Product Valuation</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" aria-label="4 accelerator programs">4</span>
+                <span class="stat-label">Accelerator Programs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         3. EXPERIENCE SECTION
+         ============================================================ -->
+    <section id="experience" aria-label="Work experience">
+      <div class="container">
+        <span class="section-label fade-up">Where I've Been</span>
+        <h2 class="section-title fade-up">Experience</h2>
+
+        <div class="timeline" role="list">
+
+          <!-- Entry 1: Distance Connect -->
+          <article class="timeline-entry fade-up" role="listitem">
+            <div class="timeline-dot" aria-hidden="true"></div>
+
+            <div class="timeline-header" 
+                 id="exp-1-header"
+                 onclick="toggleTimeline(this)" 
+                 role="button" 
+                 tabindex="0" 
+                 aria-expanded="false"
+                 aria-controls="exp-1-body"
+                 onkeypress="handleKeyPress(event, this)">
+              <div class="timeline-meta">
+                <div class="timeline-role">
+                  Founder &amp; CEO
+                  <span class="timeline-role-badge">&nbsp;· Product Leadership Role</span>
+                </div>
+                <div class="timeline-company">Distance Connect ,  Skillzia Education Technologies Pvt. Ltd.</div>
+                <div class="timeline-duration">📅 May 2024 – March 2026 &nbsp;·&nbsp; 📍 New Delhi</div>
+                <div class="timeline-tags" aria-label="Role tags">
+                  <span class="tag">EdTech</span>
+                  <span class="tag">SaaS</span>
+                  <span class="tag">0-to-1</span>
+                  <span class="tag">Agile</span>
+                </div>
+              </div>
+              <span class="timeline-chevron" aria-hidden="true">▾</span>
+            </div>
+
+            <div class="timeline-body" id="exp-1-body" role="region" aria-labelledby="exp-1-header">
+              <ul class="timeline-bullets">
+                <li>Architected end-to-end product strategy and MVP roadmap; reached ₹2.5 Cr valuation in 18 months, securing ₹5.5L pre-seed funding and DTU IIF incubation.</li>
+                <li>Validated PMF through 500+ structured user interviews; accepted into Google, Microsoft, Zoho, and Dell startup programs.</li>
+                <li>Led cross-functional team of 8 (tech, design, marketing, finance, legal) via Agile/Scrum ,  bi-weekly sprints, daily standups, backlog grooming ,  delivering 15+ features on schedule.</li>
+                <li>Defined North Star metrics (activation rate, 30-day retention, LTV:CAC); achieved 35% MoM user growth and 68% 30-day retention.</li>
+                <li>Orchestrated GTM strategies with engineering and design, covering marketing collateral, help docs, and legal checks for successful beta launch.</li>
+                <li>Managed investor and enterprise partner relationships; delivered quarterly business reviews and roadmap presentations.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Entry 2: Bubbl Social -->
+          <article class="timeline-entry fade-up" role="listitem">
+            <div class="timeline-dot" aria-hidden="true"></div>
+
+            <div class="timeline-header"
+                 id="exp-2-header"
+                 onclick="toggleTimeline(this)"
+                 role="button"
+                 tabindex="0"
+                 aria-expanded="false"
+                 aria-controls="exp-2-body"
+                 onkeypress="handleKeyPress(event, this)">
+              <div class="timeline-meta">
+                <div class="timeline-role">
+                  Marketing Executive
+                  <span class="timeline-role-badge">&nbsp;· Growth Product Role</span>
+                </div>
+                <div class="timeline-company">Bubbl Social</div>
+                <div class="timeline-duration">📅 Aug 2023 – Oct 2023 &nbsp;·&nbsp; 📍 New Delhi</div>
+                <div class="timeline-tags" aria-label="Role tags">
+                  <span class="tag">Growth</span>
+                  <span class="tag">GTM</span>
+                  <span class="tag">Funnel Optimization</span>
+                </div>
+              </div>
+              <span class="timeline-chevron" aria-hidden="true">▾</span>
+            </div>
+
+            <div class="timeline-body" id="exp-2-body" role="region" aria-labelledby="exp-2-header">
+              <ul class="timeline-bullets">
+                <li>Executed GTM strategy for the college vertical using viral loop mechanics ,  acquired 1,300 active users in 1.7 months, exceeding targets by 40%.</li>
+                <li>Designed multi-channel growth experiments (influencer, campus activations); achieved 25% organic growth rate and 3.2x viral coefficient.</li>
+                <li>Conducted user research to identify friction points; A/B tests improved activation rate by 18% and cut time-to-value by 40%.</li>
+              </ul>
+            </div>
+          </article>
+
+        </div><!-- /.timeline -->
+      </div>
+    </section>
+
+    <!-- ============================================================
+         4. PROJECTS / KEY INITIATIVES SECTION
+         ============================================================ -->
+    <section id="projects" aria-label="Key product initiatives">
+      <div class="container">
+        <span class="section-label fade-up">What I've Shipped</span>
+        <h2 class="section-title fade-up">Key Initiatives</h2>
+
+        <div class="projects-grid">
+
+          <!-- Card 1: EdTech SaaS (featured ,  tall card) -->
+          <article class="project-card fade-up" aria-label="EdTech SaaS ,  0 to 1 project">
+            <div class="project-metric" aria-label="35 percent month-over-month user growth">35%</div>
+            <h3 class="project-title">EdTech SaaS ,  0 to 1</h3>
+            <p class="project-desc">Full product lifecycle ,  from ideation to a ₹2.5 Cr valuation EdTech platform with 5,000+ active users.</p>
+            <div class="project-tags" aria-label="Project tags">
+              <span class="tag">Product Strategy</span>
+              <span class="tag">Roadmapping</span>
+              <span class="tag">PMF</span>
+            </div>
+            <p class="project-details">
+              Ran 500+ structured user interviews to validate PMF. Defined activation and retention metrics. Shipped 15+ features across 18 months. Secured 4 accelerator partnerships ,  Google, Microsoft, Zoho, Dell. Achieved 35% MoM growth and 68% 30-day retention.
+            </p>
+          </article>
+
+          <!-- Card 2: Marketing Automation -->
+          <article class="project-card fade-up" aria-label="Marketing Automation Platform project">
+            <div class="project-metric" aria-label="124 percent conversion rate improvement">+124%</div>
+            <h3 class="project-title">Marketing Automation Platform</h3>
+            <p class="project-desc">End-to-end email marketing automation with customer segmentation and personalization engine.</p>
+            <div class="project-tags" aria-label="Project tags">
+              <span class="tag">Zoho Campaigns</span>
+              <span class="tag">Segmentation</span>
+              <span class="tag">Automation</span>
+            </div>
+            <p class="project-details">
+              Built customer segmentation logic and personalization pipelines. Open rate improved from 28% → 41%. Conversion rate more than doubled: 2.1% → 4.7%.
+            </p>
+          </article>
+
+          <!-- Card 3: Growth Experimentation -->
+          <article class="project-card fade-up" aria-label="Growth Experimentation Framework project">
+            <div class="project-metric" aria-label="67 percent content engagement rate increase">+67%</div>
+            <h3 class="project-title">Growth Experimentation Framework</h3>
+            <p class="project-desc">Systematic AARRR-based experimentation process across acquisition, activation, and retention.</p>
+            <div class="project-tags" aria-label="Project tags">
+              <span class="tag">AARRR</span>
+              <span class="tag">A/B Testing</span>
+              <span class="tag">Growth</span>
+            </div>
+            <p class="project-details">
+              Ran 20+ experiments. Optimized messaging architecture and visual storytelling. Content engagement up 67%, shareability improved 3.1x.
+            </p>
+          </article>
+
+        </div><!-- /.projects-grid -->
+      </div>
+    </section>
+
+    <!-- ============================================================
+         5. SKILLS SECTION
+         ============================================================ -->
+    <section id="skills" aria-label="Skills and tools">
+      <div class="container">
+        <span class="section-label fade-up">What I Bring</span>
+        <h2 class="section-title fade-up">Skills &amp; Tools</h2>
+
+        <div class="skills-grid">
+
+          <div class="skill-category fade-up">
+            <h3 class="skill-category-title">Core PM</h3>
+            <div class="skill-pills" role="list">
+              <span class="pill pill-core" role="listitem">User Research</span>
+              <span class="pill pill-core" role="listitem">Roadmapping</span>
+              <span class="pill pill-core" role="listitem">KPI Definition</span>
+              <span class="pill pill-core" role="listitem">A/B Testing</span>
+              <span class="pill pill-core" role="listitem">GTM Strategy</span>
+              <span class="pill pill-core" role="listitem">Stakeholder Management</span>
+              <span class="pill pill-core" role="listitem">Cross-Functional Leadership</span>
+              <span class="pill pill-core" role="listitem">SOP Creation</span>
+              <span class="pill pill-core" role="listitem">Root Cause Analysis</span>
+            </div>
+          </div>
+
+          <div class="skill-category fade-up">
+            <h3 class="skill-category-title">Methodologies</h3>
+            <div class="skill-pills" role="list">
+              <span class="pill pill-core" role="listitem">Agile / Scrum</span>
+              <span class="pill pill-core" role="listitem">Sprint Planning</span>
+              <span class="pill pill-core" role="listitem">Backlog Grooming</span>
+              <span class="pill pill-core" role="listitem">RICE Scoring</span>
+              <span class="pill pill-core" role="listitem">MoSCoW</span>
+            </div>
+          </div>
+
+          <div class="skill-category fade-up">
+            <h3 class="skill-category-title">PM Tools</h3>
+            <div class="skill-pills" role="list">
+              <span class="pill pill-tool" role="listitem">Jira</span>
+              <span class="pill pill-tool" role="listitem">Asana</span>
+              <span class="pill pill-tool" role="listitem">Notion</span>
+              <span class="pill pill-tool" role="listitem">Miro</span>
+              <span class="pill pill-tool" role="listitem">FigJam</span>
+              <span class="pill pill-tool" role="listitem">ProductBoard</span>
+              <span class="pill pill-tool" role="listitem">Confluence</span>
+            </div>
+          </div>
+
+          <div class="skill-category fade-up">
+            <h3 class="skill-category-title">Analytics</h3>
+            <div class="skill-pills" role="list">
+              <span class="pill pill-tool" role="listitem">Google Analytics</span>
+              <span class="pill pill-tool" role="listitem">Mixpanel</span>
+              <span class="pill pill-tool" role="listitem">Microsoft Clarity</span>
+              <span class="pill pill-tool" role="listitem">SimilarWeb</span>
+              <span class="pill pill-tool" role="listitem">Tableau</span>
+              <span class="pill pill-tool" role="listitem">Google Sheets</span>
+            </div>
+          </div>
+
+          <div class="skill-category fade-up">
+            <h3 class="skill-category-title">Tech Stack</h3>
+            <div class="skill-pills" role="list">
+              <span class="pill pill-tool" role="listitem">SQL</span>
+              <span class="pill pill-tool" role="listitem">Python</span>
+              <span class="pill pill-tool" role="listitem">Excel</span>
+              <span class="pill pill-tool" role="listitem">Zapier</span>
+              <span class="pill pill-tool" role="listitem">N8N</span>
+            </div>
+          </div>
+
+          <div class="skill-category fade-up">
+            <h3 class="skill-category-title">Marketing &amp; Outreach</h3>
+            <div class="skill-pills" role="list">
+              <span class="pill pill-tool" role="listitem">Zoho Campaigns</span>
+              <span class="pill pill-tool" role="listitem">Buffer</span>
+              <span class="pill pill-tool" role="listitem">Apollo.io</span>
+              <span class="pill pill-tool" role="listitem">LinkedIn</span>
+            </div>
+          </div>
+
+        </div><!-- /.skills-grid -->
+      </div>
+    </section>
+
+    <!-- ============================================================
+         6. EDUCATION SECTION
+         ============================================================ -->
+    <section id="education" aria-label="Education">
+      <div class="container">
+        <span class="section-label fade-up">Background</span>
+        <h2 class="section-title fade-up">Education</h2>
+
+        <article class="education-card fade-up" aria-label="Delhi Technological University education details">
+          <div class="edu-icon" aria-hidden="true">🎓</div>
+          <div class="edu-info">
+            <h3 class="edu-institution">Delhi Technological University</h3>
+            <p class="edu-degree">B.Tech ,  Mechanical Engineering (Automotive Engineering Specialization)</p>
+            <div class="edu-meta">
+              <span><span aria-hidden="true">📅</span> Aug 2023 – July 2027 (Expected)</span>
+              <span><span aria-hidden="true">📍</span> New Delhi, India</span>
+            </div>
+            <!-- TODO: Add relevant coursework, GPA, or clubs here when Amit provides them -->
+            <!-- Example: <p style="margin-top:12px; color: var(--text-muted); font-size:0.85rem;">Relevant coursework: ...</p> -->
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         7. CONTACT / CTA SECTION
+         ============================================================ -->
+    <section id="contact" aria-label="Contact and call to action">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="availability-badge fade-up" role="status" aria-label="Currently open to opportunities">
+            <span class="availability-dot" aria-hidden="true"></span>
+            Open to Opportunities
+          </div>
+
+          <p class="contact-pre fade-up">Get In Touch</p>
+
+          <h2 class="contact-title fade-up">Let's Build<br />Something.</h2>
+
+          <p class="contact-body fade-up">
+            I'm actively looking for PM internship opportunities.<br />
+            If you're building something interesting, I'd love to talk.
+          </p>
+
+          <div class="contact-ctas fade-up">
+            <a href="mailto:work.amit.gautam@gmail.com" 
+               class="btn btn-primary" 
+               id="contact-email-btn"
+               aria-label="Send Amit an email">
+              Email Me
+              <span aria-hidden="true">✉</span>
+            </a>
+            <!-- REPLACE: update href with your actual LinkedIn profile URL -->
+            <a href="https://linkedin.com/in/amitgautam" 
+               class="btn btn-secondary"
+               id="contact-linkedin-btn"
+               target="_blank" 
+               rel="noopener noreferrer"
+               aria-label="View Amit's LinkedIn profile (opens in new tab)">
+              View LinkedIn
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a href="assets/Amit_Gautam_Product_Manager_Intern_Resume.pdf" 
+               class="btn btn-secondary"
+               id="contact-resume-btn"
+               download
+               aria-label="Download Amit's resume PDF">
+              Download Resume
+              <span aria-hidden="true">↓</span>
+            </a>
+            <!-- REPLACE: update resume.pdf with your actual resume file -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main><!-- /#main-content -->
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer role="contentinfo">
+    <p class="footer-copy">© 2025 Amit Gautam · New Delhi, India</p>
+    <nav class="footer-links" aria-label="Social links">
+      <!-- REPLACE: update href with your actual LinkedIn URL -->
+      <a href="https://linkedin.com/in/amitgautam" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         aria-label="LinkedIn profile">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/>
+          <circle cx="4" cy="4" r="2"/>
+        </svg>
+      </a>
+      <a href="mailto:work.amit.gautam@gmail.com"
+         aria-label="Email Amit Gautam">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+      </a>
+      <!-- REPLACE: update href with your actual GitHub URL -->
+      <a href="https://github.com/amitgautam" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         aria-label="GitHub profile">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/>
+        </svg>
+      </a>
+    </nav>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="scroll-top" aria-label="Scroll to top of page" title="Back to top" onclick="scrollToTop()">
+    ↑
+  </button>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
