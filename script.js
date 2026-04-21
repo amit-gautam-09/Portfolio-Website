@@ -11,34 +11,12 @@
 // ============================================================
 const THEME_KEY = 'ag-portfolio-theme';
 const html      = document.documentElement;
-const themeBtn  = document.getElementById('theme-toggle');
-const themeIcon = document.getElementById('theme-icon');
 
-function applyTheme(theme) {
-  html.setAttribute('data-theme', theme);
-  themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
-  localStorage.setItem(THEME_KEY, theme);
-
-  // Update scrolled navbar bg for light mode
-  updateNavbarTheme();
-}
-
-function updateNavbarTheme() {
-  // Navbar scroll handler already reads CSS vars, nothing extra needed.
-}
-
-function toggleTheme() {
-  const current = html.getAttribute('data-theme');
-  applyTheme(current === 'dark' ? 'light' : 'dark');
-}
-
-// Initialize theme from localStorage or default dark
+// Theme toggle was removed from HTML
+// Ensure a default theme is set if needed
 (function initTheme() {
-  const saved = localStorage.getItem(THEME_KEY);
-  applyTheme(saved || 'dark');
+  html.setAttribute('data-theme', 'dark');
 })();
-
-themeBtn.addEventListener('click', toggleTheme);
 
 // ============================================================
 // NAVBAR: SCROLL BEHAVIOR

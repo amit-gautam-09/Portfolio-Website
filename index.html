@@ -42,7 +42,7 @@
        ============================================================ -->
   <nav id="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-logo" id="nav-logo" onclick="scrollToTop()" aria-label="Amit Gautam ,  scroll to top">
-      <img src="assets/amit_avatar_image.png" alt="Amit Gautam Logo" style="height: 36px; width: 36px; border-radius: 50%; object-fit: cover; display: block;" />
+      <img src="assets/amit_avatar_image.png" alt="Amit Gautam Logo" style="height: 38px; width: 38px; border-radius: 50%; object-fit: cover; display: block; border: 2px solid rgba(255, 255, 255, 0.9);" />
     </div>
 
     <ul class="nav-links" role="list">
@@ -54,10 +54,9 @@
     </ul>
 
     <div class="nav-actions">
-      <button id="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle theme">
-        <!-- Icon swaps via JS -->
-        <span id="theme-icon">☀️</span>
-      </button>
+      <a href="assets/Amit_Gautam_Product_Manager_Intern_Resume.pdf" class="nav-resume-btn" download aria-label="Download Amit Gautam's Resume">
+        Resume ↗
+      </a>
       <button id="hamburger" aria-label="Open mobile menu" aria-expanded="false">
         <span></span>
         <span></span>
@@ -83,41 +82,80 @@
     <!-- ============================================================
          1. HERO SECTION
          ============================================================ -->
-    <section id="hero" aria-label="Hero ,  introduction">
+    <section id="hero" aria-label="Hero introduction">
       <div class="hero-bg" aria-hidden="true"></div>
 
-      <div class="container">
-        <div class="hero-grid">
-          <div class="hero-content">
-
-            <h1 class="hero-name">Amit Gautam</h1>
-            <p class="hero-role">Product Manager</p>
-
-            <p class="hero-tagline">
-              From 0 to 5,000+ users. From concept to ₹2.5 Cr valuation.<br />
-              Now building the next thing.
-            </p>
-
-            <p class="hero-body">
-              Founder-turned-PM with <strong>1.8 years</strong> building EdTech SaaS from scratch.<br />
-              I obsess over user problems, ship fast, and measure everything.<br />
-              Currently: <strong>3rd-year Engineering @ DTU</strong> | Open to PM internships.
-            </p>
-
-            <div class="hero-ctas">
-              <a href="#projects" class="btn btn-primary" id="hero-cta-work" aria-label="View my work ,  scroll to projects">
-                View My Work
-                <span aria-hidden="true">↓</span>
-              </a>
-              <a href="assets/Amit_Gautam_Product_Manager_Intern_Resume.pdf" class="btn btn-secondary" id="hero-cta-resume" download aria-label="Download Amit Gautam's resume PDF">
-                Download Resume
-                <span aria-hidden="true">↗</span>
-              </a>
-              <!-- REPLACE: update resume.pdf link with your actual resume file path -->
+      <div class="full-width-hero">
+        <!-- LEFT COLUMN -->
+        <div class="hero-left">
+          <div class="availability-pill">Available for the Product Management Role</div>
+          <h1 class="hero-headline">Founder Turned<br>PM With 1.8 Years<br>of Experience.</h1>
+          <p class="hero-sub">
+            Built Zero to 1 EdTech SaaS to ₹2.5 Cr valuation,<br>
+            5,000+ users, and 68% retention, in 18 months,<br>
+            500+ user interviews, 15+ features shipped.
+          </p>
+          <div class="hero-ctas-new">
+            <a href="#contact" class="btn-new btn-navy">Let's Work Together</a>
+            <a href="#about" class="btn-new btn-outline">Know More →</a>
+          </div>
+          
+          <div class="accelerator-strip">
+            <div class="logo-cluster">
+              <div class="logo-circle"><img src="assets/google_logo_image.png" alt="Google"></div>
+              <div class="logo-circle"><img src="assets/Microsoft_logo_image.png" alt="Microsoft"></div>
+              <div class="logo-circle"><img src="assets/Dell_logo_image.png" alt="Dell"></div>
+              <div class="logo-circle"><img src="assets/zoho_logo_image.png" alt="Zoho"></div>
+            </div>
+            <div class="accelerator-text">
+              Accepted by 4+ Global<br>Startup Accelerators
             </div>
           </div>
-          <div class="hero-image-wrap fade-up">
-            <img src="assets/Amit_Profile_Image.png" alt="Amit Gautam Profile" class="hero-image" />
+        </div>
+
+        <!-- CENTER-RIGHT: Photo -->
+        <div class="hero-center">
+          <img src="assets/amit_protfolio_image.png" alt="Amit Gautam" class="hero-portrait">
+        </div>
+
+        <!-- FAR RIGHT: Stat Cards -->
+        <div class="hero-right">
+          <div class="stat-card stat-card-1">
+            <div class="stat-icon-green">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </div>
+            <div class="stat-text">
+              <span class="stat-line1">0-to-1 MVP to</span>
+              <span class="stat-line2">INR 2.5 Cr Val.</span>
+            </div>
+          </div>
+
+          <div class="stat-card stat-card-2">
+            <div class="stat-label-top">Key PM tools from resume</div>
+            <div class="stat-tools-row">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt="Jira" class="tool-icon">
+              <!-- Using standard icons since specific files for tools weren't provided -->
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="FigJam" class="tool-icon">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png" alt="Notion" class="tool-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" class="tool-icon">
+            </div>
+            <div class="stat-label-bottom">Notion, FigJam, etc.</div>
+          </div>
+
+          <div class="stat-card stat-card-3">
+            <div class="retention-row">
+              <div class="retention-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg>
+              </div>
+              <div class="retention-val">68%</div>
+            </div>
+            <div class="retention-label">30-Day Retention</div>
+            <div class="users-val">5,000+ Users</div>
           </div>
         </div>
       </div>
@@ -145,36 +183,39 @@
 
           <!-- Text Column -->
           <div class="about-text">
+            <h3 class="about-headline fade-up" style="font-family: var(--font-heading); font-weight: 800; font-size: 1.4rem; color: var(--text-primary); margin-bottom: 16px;">Founder-Turned-PM Intern With 1.8 Years of End-to-End Product Experience</h3>
             <p class="fade-up">
-              I'm a product manager who built a company before knowing what a PRD was.
+              I'm a Founder-turned-PM intern with <strong>1.8 years of hands-on product ownership</strong> — from 0-to-1 MVP architecture to 5,000+ active users and an INR 2.5 Cr valuation. I've led cross-functional teams, run 500+ user interviews, shipped 15+ product features, and driven data-powered growth using tools like SQL, Python, Google Analytics, and Microsoft Clarity.
             </p>
             <p class="fade-up">
-              As Founder &amp; CEO of <strong>Distance Connect</strong> (Skillzia Education Technologies), I led a cross-functional team of 8, ran <strong>500+ user interviews</strong>, defined north star metrics, shipped <strong>15+ features</strong>, and grew the platform to <strong>5,000+ active users</strong> and <strong>₹2.5 Cr in valuation</strong> ,  all while studying engineering at DTU.
-            </p>
-            <p class="fade-up">
-              I've since closed the company and redirected that energy toward PM roles where I can apply these skills at scale. I'm especially interested in <strong>AI-native products</strong>, EdTech, and platforms with strong data flywheels.
-            </p>
-            <p class="fade-up">
-              My edge: I've been the PM, the founder, the growth marketer, and the stakeholder manager ,  often all in the same week.
+              Currently a 3rd-year B.Tech student at Delhi Technological University (Mechanical Engineering, Automotive Specialization), I obsess over user problems, move fast, and measure everything. Backed by Google, Microsoft, Dell, and Zoho startup programs. Open to Product Manager internship roles.
             </p>
 
             <!-- Stats Bar -->
             <div class="stats-bar fade-up" aria-label="Key metrics">
               <div class="stat-item">
+                <span class="stat-number" aria-label="5000 plus active users">5,000+</span>
+                <span class="stat-label">Users Reached</span>
+              </div>
+              <div class="stat-item">
                 <span class="stat-number" aria-label="500 plus user interviews">500+</span>
                 <span class="stat-label">User Interviews</span>
               </div>
               <div class="stat-item">
-                <span class="stat-number" aria-label="5000 plus active users">5,000+</span>
-                <span class="stat-label">Active Users</span>
+                <span class="stat-number" aria-label="15 plus features shipped">15+</span>
+                <span class="stat-label">Features Shipped</span>
               </div>
               <div class="stat-item">
-                <span class="stat-number" aria-label="2.5 crore rupees product valuation">₹2.5 Cr</span>
-                <span class="stat-label">Product Valuation</span>
+                <span class="stat-number" aria-label="2.5 crore rupees product valuation">INR 2.5 Cr</span>
+                <span class="stat-label">Valuation Achieved</span>
               </div>
               <div class="stat-item">
-                <span class="stat-number" aria-label="4 accelerator programs">4</span>
-                <span class="stat-label">Accelerator Programs</span>
+                <span class="stat-number" aria-label="4 global programs">4+</span>
+                <span class="stat-label">Global Programs</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" aria-label="68 percent 30-day retention">68%</span>
+                <span class="stat-label">Retention (30-Day)</span>
               </div>
             </div>
           </div>
@@ -223,12 +264,17 @@
 
             <div class="timeline-body" id="exp-1-body" role="region" aria-labelledby="exp-1-header">
               <ul class="timeline-bullets">
-                <li>Architected end-to-end product strategy and MVP roadmap; reached ₹2.5 Cr valuation in 18 months, securing ₹5.5L pre-seed funding and DTU IIF incubation.</li>
-                <li>Validated PMF through 500+ structured user interviews; accepted into Google, Microsoft, Zoho, and Dell startup programs.</li>
-                <li>Led cross-functional team of 8 (tech, design, marketing, finance, legal) via Agile/Scrum ,  bi-weekly sprints, daily standups, backlog grooming ,  delivering 15+ features on schedule.</li>
-                <li>Defined North Star metrics (activation rate, 30-day retention, LTV:CAC); achieved 35% MoM user growth and 68% 30-day retention.</li>
-                <li>Orchestrated GTM strategies with engineering and design, covering marketing collateral, help docs, and legal checks for successful beta launch.</li>
-                <li>Managed investor and enterprise partner relationships; delivered quarterly business reviews and roadmap presentations.</li>
+                <li><strong>0-to-1 Product Ownership:</strong> Architected end-to-end product strategy and MVP roadmap for an EdTech SaaS platform from concept to INR 2.5 Cr valuation within 18 months; secured pre-seed funding of INR 5.5 Lakhs and institutional backing from DTU IIF Incubation Centre.</li>
+                <li><strong>User Research &amp; PMF:</strong> Validated product-market fit through 500+ structured user interviews and 6 iterative prototyping cycles across web and mobile; accepted into 4 prestigious accelerator programs — Google for Startups, Microsoft for Startups, Zoho for Startups, and Dell for Startups.</li>
+                <li><strong>Cross-Functional Team Leadership:</strong> Led a cross-functional team of 8+ members (tech, design, marketing, finance, legal) using Agile/Scrum; conducted bi-weekly sprint planning, daily standups, and backlog grooming to deliver 15+ product features on schedule.</li>
+                <li><strong>Stakeholder Management:</strong> Managed a board of 5 investor-mentors at DTU IIF Incubation Centre; delivered 6 quarterly roadmap and business-review presentations that resolved conflicts between growth targets and engineering capacity via phased release planning, securing continued financial and strategic backing.</li>
+                <li><strong>UX &amp; Heatmap Analysis:</strong> Deployed Microsoft Clarity to conduct heatmap analysis across web and mobile interfaces; identified that 62% of users abandoned onboarding at Step 3 due to a cluttered UI, redesigned that step based on click-density and scroll-depth data, and improved onboarding completion rate by 27%.</li>
+                <li><strong>SEO &amp; Growth Analytics:</strong> Leveraged Google Analytics and Google Search Console to analyse traffic by geography, device, and acquisition channel; identified 3 high-demand but under-served regions, implemented targeted content and on-page SEO improvements that grew organic sessions by 43% and improved average search ranking from position 18 to position 7 within 90 days.</li>
+                <li><strong>Data Engineering &amp; SQL/Python:</strong> Used Python (pandas) to automate weekly cohort retention reports across 5,000+ users, cutting analysis time from 4 hours to 20 minutes; wrote SQL queries to segment users by activation cohort and discovered that WhatsApp-referred users had 2.4x higher 30-day retention than paid-channel users — shifted 30% of acquisition spend accordingly.</li>
+                <li><strong>Market &amp; Competitive Analysis:</strong> Conducted market sizing and competitive landscape analysis across 12+ reports (SimilarWeb, IBEF, WEF, NASSCOM, RBI MSME) to validate a USD 4.8 Bn addressable market and inform product roadmap prioritisation.</li>
+                <li><strong>A/B Testing &amp; Funnel Optimisation:</strong> Designed 3 A/B tests on the onboarding funnel; reduced sign-up steps from 5 to 3, lifting activation from 34% → 52% (<strong>18% lift</strong>) and reducing median time-to-first-action by 40%, improving 7-day retention from 42% to 58%.</li>
+                <li><strong>KPI Definition &amp; North Star Metrics:</strong> Defined and tracked North Star metrics (activation rate, 30-day retention, LTV:CAC); achieved 35% MoM user growth and 68% 30-day retention through data-driven feature prioritisation.</li>
+                <li><strong>Go-to-Market &amp; Customer Experience:</strong> Orchestrated product launches and GTM strategies in collaboration with engineering and design; managed customer-experience touchpoints from onboarding to support, resulting in a successful beta launch, <strong>5,000+ active users</strong>, and early enterprise customer acquisition.</li>
               </ul>
             </div>
           </article>
@@ -263,9 +309,8 @@
 
             <div class="timeline-body" id="exp-2-body" role="region" aria-labelledby="exp-2-header">
               <ul class="timeline-bullets">
-                <li>Executed GTM strategy for the college vertical using viral loop mechanics ,  acquired 1,300 active users in 1.7 months, exceeding targets by 40%.</li>
-                <li>Designed multi-channel growth experiments (influencer, campus activations); achieved 25% organic growth rate and 3.2x viral coefficient.</li>
-                <li>Conducted user research to identify friction points; A/B tests improved activation rate by 18% and cut time-to-value by 40%.</li>
+                <li><strong>GTM &amp; Growth:</strong> Executed Go-to-Market strategy for the college vertical using viral loop mechanics and multi-channel experiments (influencer partnerships, campus activations); acquired <strong>1,300 active users</strong> in 1.7 months — 40% above target — with a 25% organic growth rate and 3.2x viral coefficient.</li>
+                <li><strong>Funnel Optimization:</strong> Conducted user research to identify friction points; implemented A/B tests and funnel optimizations that improved activation rate by 18% and reduced time-to-value by 40%.</li>
               </ul>
             </div>
           </article>
@@ -284,48 +329,47 @@
 
         <div class="projects-grid">
 
-          <!-- Card 1: EdTech SaaS (featured ,  tall card) -->
-          <article class="project-card fade-up" aria-label="EdTech SaaS ,  0 to 1 project">
-            <div class="project-metric" aria-label="35 percent month-over-month user growth">35%</div>
-            <h3 class="project-title">EdTech SaaS ,  0 to 1</h3>
-            <p class="project-desc">Full product lifecycle ,  from ideation to a ₹2.5 Cr valuation EdTech platform with 5,000+ active users.</p>
-            <div class="project-tags" aria-label="Project tags">
-              <span class="tag">Product Strategy</span>
-              <span class="tag">Roadmapping</span>
-              <span class="tag">PMF</span>
+          <!-- Card 1: Initiative 1 -->
+          <article class="project-card fade-up" aria-label="Marketing Automation Platform Development">
+            <div class="project-metric" aria-label="46 percent improvement">+46%</div>
+            <h3 class="project-title">Marketing Automation Platform Development</h3>
+            <p class="project-desc">Designed and implemented an end-to-end email marketing automation system using Zoho Campaigns API.</p>
+            <div class="project-tags" aria-label="Key Results">
+              <span class="tag">Open Rate: 28% → 41%</span>
+              <span class="tag">Conv Rate: 2.1% → 4.7%</span>
             </div>
             <p class="project-details">
-              Ran 500+ structured user interviews to validate PMF. Defined activation and retention metrics. Shipped 15+ features across 18 months. Secured 4 accelerator partnerships ,  Google, Microsoft, Zoho, Dell. Achieved 35% MoM growth and 68% 30-day retention.
+              Building customer segmentation logic and personalization engines from scratch. Defined success metrics upfront and tracked impact rigorously: email open rate improved from <strong>28% → 41% (+46%)</strong> and conversion rate from <strong>2.1% → 4.7%</strong>, demonstrating strong data-driven decision making aligned with KPI ownership.
             </p>
           </article>
 
-          <!-- Card 2: Marketing Automation -->
-          <article class="project-card fade-up" aria-label="Marketing Automation Platform project">
-            <div class="project-metric" aria-label="124 percent conversion rate improvement">+124%</div>
-            <h3 class="project-title">Marketing Automation Platform</h3>
-            <p class="project-desc">End-to-end email marketing automation with customer segmentation and personalization engine.</p>
-            <div class="project-tags" aria-label="Project tags">
-              <span class="tag">Zoho Campaigns</span>
-              <span class="tag">Segmentation</span>
-              <span class="tag">Automation</span>
-            </div>
-            <p class="project-details">
-              Built customer segmentation logic and personalization pipelines. Open rate improved from 28% → 41%. Conversion rate more than doubled: 2.1% → 4.7%.
-            </p>
-          </article>
-
-          <!-- Card 3: Growth Experimentation -->
-          <article class="project-card fade-up" aria-label="Growth Experimentation Framework project">
+          <!-- Card 2: Initiative 2 -->
+          <article class="project-card fade-up" aria-label="Growth Experimentation Framework">
             <div class="project-metric" aria-label="67 percent content engagement rate increase">+67%</div>
-            <h3 class="project-title">Growth Experimentation Framework</h3>
-            <p class="project-desc">Systematic AARRR-based experimentation process across acquisition, activation, and retention.</p>
-            <div class="project-tags" aria-label="Project tags">
-              <span class="tag">AARRR</span>
-              <span class="tag">A/B Testing</span>
-              <span class="tag">Growth</span>
+            <h3 class="project-title">Growth Experimentation Framework (AARRR Pirate Metrics)</h3>
+            <p class="project-desc">Developed a systematic, repeatable experimentation process running <strong>20+ A/B tests</strong> across all funnel stages.</p>
+            <div class="project-tags" aria-label="Key Results">
+              <span class="tag">20+ A/B Tests Run</span>
+              <span class="tag">Engagement: +67%</span>
+              <span class="tag">Shareability: 3.1x</span>
             </div>
             <p class="project-details">
-              Ran 20+ experiments. Optimized messaging architecture and visual storytelling. Content engagement up 67%, shareability improved 3.1x.
+              Optimized messaging architecture and visual storytelling; increased content engagement rate by <strong>67%</strong> and shareability by <strong>3.1x</strong>.
+            </p>
+          </article>
+
+          <!-- Card 3: Initiative 3 -->
+          <article class="project-card fade-up" aria-label="Product Roadmap &amp; Backlog Management">
+            <div class="project-metric" aria-label="15 plus features shipped">15+</div>
+            <h3 class="project-title">Product Roadmap &amp; Backlog Management (EdTech Platform)</h3>
+            <p class="project-desc">Built and maintained a structured product backlog using Jira and Notion.</p>
+            <div class="project-tags" aria-label="Key Results">
+              <span class="tag">15+ Features Shipped</span>
+              <span class="tag">RICE / MoSCoW</span>
+              <span class="tag">Jira, Notion</span>
+            </div>
+            <p class="project-details">
+              Prioritized features using RICE scoring and MoSCoW framework based on user research and business impact. Maintained detailed release documentation, feature update logs, and internal knowledge bases ensuring full organisational alignment across all <strong>15+ product features</strong> shipped.
             </p>
           </article>
 
@@ -344,24 +388,45 @@
         <div class="skills-grid">
 
           <div class="skill-category fade-up">
-            <h3 class="skill-category-title">Core PM</h3>
+            <h3 class="skill-category-title">PM Tools</h3>
             <div class="skill-pills" role="list">
-              <span class="pill pill-core" role="listitem">User Research</span>
-              <span class="pill pill-core" role="listitem">Roadmapping</span>
-              <span class="pill pill-core" role="listitem">KPI Definition</span>
-              <span class="pill pill-core" role="listitem">A/B Testing</span>
-              <span class="pill pill-core" role="listitem">GTM Strategy</span>
-              <span class="pill pill-core" role="listitem">Stakeholder Management</span>
-              <span class="pill pill-core" role="listitem">Cross-Functional Leadership</span>
-              <span class="pill pill-core" role="listitem">SOP Creation</span>
-              <span class="pill pill-core" role="listitem">Root Cause Analysis</span>
+              <span class="pill pill-tool" role="listitem"><img src="https://cdn.simpleicons.org/jira/0052CC" style="width: 14px; height: 14px;" alt="" aria-hidden="true">Jira</span>
+              <span class="pill pill-tool" role="listitem"><img src="https://cdn.simpleicons.org/asana/F06A6A" style="width: 14px; height: 14px;" alt="" aria-hidden="true">Asana</span>
+              <span class="pill pill-tool" role="listitem"><img src="https://cdn.simpleicons.org/notion" style="width: 14px; height: 14px;" alt="" aria-hidden="true">Notion</span>
+              <span class="pill pill-tool" role="listitem"><img src="https://cdn.simpleicons.org/miro/050038" style="width: 14px; height: 14px;" alt="" aria-hidden="true">Miro</span>
+              <span class="pill pill-tool" role="listitem"><img src="https://cdn.simpleicons.org/figma/F24E1E" style="width: 14px; height: 14px;" alt="" aria-hidden="true">FigJam</span>
+              <span class="pill pill-tool" role="listitem"><img src="https://cdn.simpleicons.org/productboard/000000" style="width: 14px; height: 14px;" alt="" aria-hidden="true">ProductBoard</span>
+              <span class="pill pill-tool" role="listitem"><img src="https://cdn.simpleicons.org/confluence/172B4D" style="width: 14px; height: 14px;" alt="" aria-hidden="true">Confluence</span>
+            </div>
+          </div>
+
+          <div class="skill-category fade-up">
+            <h3 class="skill-category-title">Tech Stack</h3>
+            <div class="skill-pills" role="list">
+              <span class="pill pill-tool" role="listitem"><img src="https://cdn.simpleicons.org/postgresql/4169E1" style="width: 14px; height: 14px;" alt="" aria-hidden="true">SQL</span>
+              <span class="pill pill-tool" role="listitem"><img src="https://cdn.simpleicons.org/python/3776AB" style="width: 14px; height: 14px;" alt="" aria-hidden="true">Python</span>
+              <span class="pill pill-tool" role="listitem"><img src="https://cdn.simpleicons.org/microsoftexcel/217346" style="width: 14px; height: 14px;" alt="" aria-hidden="true">Excel</span>
+              <span class="pill pill-tool" role="listitem"><img src="https://cdn.simpleicons.org/zapier/FF4A00" style="width: 14px; height: 14px;" alt="" aria-hidden="true">Zapier</span>
+              <span class="pill pill-tool" role="listitem"><img src="https://cdn.simpleicons.org/n8n/EA526F" style="width: 14px; height: 14px;" alt="" aria-hidden="true">N8N</span>
+            </div>
+          </div>
+
+          <div class="skill-category fade-up">
+            <h3 class="skill-category-title">Analytics</h3>
+            <div class="skill-pills" role="list">
+              <span class="pill pill-tool" role="listitem"><img src="https://cdn.simpleicons.org/googleanalytics/E37400" style="width: 14px; height: 14px;" alt="" aria-hidden="true">Google Analytics</span>
+              <span class="pill pill-tool" role="listitem"><img src="https://cdn.simpleicons.org/googlesheets/34A853" style="width: 14px; height: 14px;" alt="" aria-hidden="true">Google Sheets</span>
+              <span class="pill pill-tool" role="listitem"><img src="https://cdn.simpleicons.org/similarweb/231F20" style="width: 14px; height: 14px;" alt="" aria-hidden="true">SimilarWeb</span>
+              <span class="pill pill-tool" role="listitem"><img src="https://cdn.simpleicons.org/microsoft/00A4EF" style="width: 14px; height: 14px;" alt="" aria-hidden="true">Microsoft Clarity</span>
+              <span class="pill pill-tool" role="listitem"><img src="https://cdn.simpleicons.org/google/4285F4" style="width: 14px; height: 14px;" alt="" aria-hidden="true">Google Search Console</span>
+              <span class="pill pill-tool" role="listitem"><img src="https://cdn.simpleicons.org/mixpanel/7856FF" style="width: 14px; height: 14px;" alt="" aria-hidden="true">Mixpanel</span>
             </div>
           </div>
 
           <div class="skill-category fade-up">
             <h3 class="skill-category-title">Methodologies</h3>
             <div class="skill-pills" role="list">
-              <span class="pill pill-core" role="listitem">Agile / Scrum</span>
+              <span class="pill pill-core" role="listitem">Agile/Scrum</span>
               <span class="pill pill-core" role="listitem">Sprint Planning</span>
               <span class="pill pill-core" role="listitem">Backlog Grooming</span>
               <span class="pill pill-core" role="listitem">RICE Scoring</span>
@@ -370,48 +435,27 @@
           </div>
 
           <div class="skill-category fade-up">
-            <h3 class="skill-category-title">PM Tools</h3>
-            <div class="skill-pills" role="list">
-              <span class="pill pill-tool" role="listitem">Jira</span>
-              <span class="pill pill-tool" role="listitem">Asana</span>
-              <span class="pill pill-tool" role="listitem">Notion</span>
-              <span class="pill pill-tool" role="listitem">Miro</span>
-              <span class="pill pill-tool" role="listitem">FigJam</span>
-              <span class="pill pill-tool" role="listitem">ProductBoard</span>
-              <span class="pill pill-tool" role="listitem">Confluence</span>
-            </div>
-          </div>
-
-          <div class="skill-category fade-up">
-            <h3 class="skill-category-title">Analytics</h3>
-            <div class="skill-pills" role="list">
-              <span class="pill pill-tool" role="listitem">Google Analytics</span>
-              <span class="pill pill-tool" role="listitem">Mixpanel</span>
-              <span class="pill pill-tool" role="listitem">Microsoft Clarity</span>
-              <span class="pill pill-tool" role="listitem">SimilarWeb</span>
-              <span class="pill pill-tool" role="listitem">Tableau</span>
-              <span class="pill pill-tool" role="listitem">Google Sheets</span>
-            </div>
-          </div>
-
-          <div class="skill-category fade-up">
-            <h3 class="skill-category-title">Tech Stack</h3>
-            <div class="skill-pills" role="list">
-              <span class="pill pill-tool" role="listitem">SQL</span>
-              <span class="pill pill-tool" role="listitem">Python</span>
-              <span class="pill pill-tool" role="listitem">Excel</span>
-              <span class="pill pill-tool" role="listitem">Zapier</span>
-              <span class="pill pill-tool" role="listitem">N8N</span>
-            </div>
-          </div>
-
-          <div class="skill-category fade-up">
             <h3 class="skill-category-title">Marketing &amp; Outreach</h3>
             <div class="skill-pills" role="list">
-              <span class="pill pill-tool" role="listitem">Zoho Campaigns</span>
-              <span class="pill pill-tool" role="listitem">Buffer</span>
-              <span class="pill pill-tool" role="listitem">Apollo.io</span>
-              <span class="pill pill-tool" role="listitem">LinkedIn</span>
+              <span class="pill pill-tool" role="listitem"><img src="https://cdn.simpleicons.org/zoho" style="width: 14px; height: 14px;" alt="" aria-hidden="true">Zoho Campaigns</span>
+              <span class="pill pill-tool" role="listitem"><img src="https://cdn.simpleicons.org/buffer" style="width: 14px; height: 14px;" alt="" aria-hidden="true">Buffer</span>
+              <span class="pill pill-tool" role="listitem"><img src="https://cdn.simpleicons.org/apollographql" style="width: 14px; height: 14px;" alt="" aria-hidden="true">Apollo.io</span>
+              <span class="pill pill-tool" role="listitem"><img src="https://cdn.simpleicons.org/linkedin/0A66C2" style="width: 14px; height: 14px;" alt="" aria-hidden="true">LinkedIn</span>
+            </div>
+          </div>
+
+          <div class="skill-category fade-up">
+            <h3 class="skill-category-title">Core PM Skills</h3>
+            <div class="skill-pills" role="list">
+              <span class="pill pill-core" role="listitem">User Research</span>
+              <span class="pill pill-core" role="listitem">Roadmapping</span>
+              <span class="pill pill-core" role="listitem">KPI Definition</span>
+              <span class="pill pill-core" role="listitem">A/B Testing</span>
+              <span class="pill pill-core" role="listitem">Go-to-Market Strategy</span>
+              <span class="pill pill-core" role="listitem">Stakeholder Management</span>
+              <span class="pill pill-core" role="listitem">Cross-Functional Leadership</span>
+              <span class="pill pill-core" role="listitem">SOP Creation</span>
+              <span class="pill pill-core" role="listitem">Root Cause Analysis</span>
             </div>
           </div>
 
@@ -427,19 +471,47 @@
         <span class="section-label fade-up">Background</span>
         <h2 class="section-title fade-up">Education</h2>
 
-        <article class="education-card fade-up" aria-label="Delhi Technological University education details">
-          <div class="edu-icon" aria-hidden="true">🎓</div>
-          <div class="edu-info">
-            <h3 class="edu-institution">Delhi Technological University</h3>
-            <p class="edu-degree">B.Tech ,  Mechanical Engineering (Automotive Engineering Specialization)</p>
-            <div class="edu-meta">
-              <span><span aria-hidden="true">📅</span> Aug 2023 – July 2027 (Expected)</span>
-              <span><span aria-hidden="true">📍</span> New Delhi, India</span>
+        <div style="display: flex; flex-direction: column; gap: 24px;">
+          <article class="education-card fade-up" aria-label="Delhi Technological University education details">
+            <div class="edu-icon" aria-hidden="true">🎓</div>
+            <div class="edu-info">
+              <h3 class="edu-institution">Delhi Technological University</h3>
+              <p class="edu-degree">B.Tech ,  Mechanical Engineering (Automotive Engineering Specialization)</p>
+              <div class="edu-meta">
+                <span><span aria-hidden="true">📅</span> Aug 2023 – July 2027 (Expected)</span>
+                <span><span aria-hidden="true">📍</span> New Delhi, India</span>
+              </div>
             </div>
-            <!-- TODO: Add relevant coursework, GPA, or clubs here when Amit provides them -->
-            <!-- Example: <p style="margin-top:12px; color: var(--text-muted); font-size:0.85rem;">Relevant coursework: ...</p> -->
-          </div>
-        </article>
+          </article>
+
+          <article class="education-card fade-up" aria-label="Andhra Education Society education details">
+            <div class="edu-icon" aria-hidden="true">🏛️</div>
+            <div class="edu-info">
+              <h3 class="edu-institution">Andhra Education Society, ITO, NEW DELHI</h3>
+              <p class="edu-degree">Intermediate</p>
+              <div class="edu-meta">
+                <span><span aria-hidden="true">📅</span> 2021 – 2022</span>
+              </div>
+              <p style="margin-top:12px; color: var(--text-secondary); font-size:0.95rem;">
+                <strong>Percentage:</strong> 78.6 &nbsp;|&nbsp; <strong>CGPA:</strong> 7.9
+              </p>
+            </div>
+          </article>
+
+          <article class="education-card fade-up" aria-label="Children's Academy education details">
+            <div class="edu-icon" aria-hidden="true">🏫</div>
+            <div class="edu-info">
+              <h3 class="edu-institution">Children's Academy</h3>
+              <p class="edu-degree">High school</p>
+              <div class="edu-meta">
+                <span><span aria-hidden="true">📅</span> 2019 – 2020</span>
+              </div>
+              <p style="margin-top:12px; color: var(--text-secondary); font-size:0.95rem;">
+                <strong>Percentage:</strong> 85.5 &nbsp;|&nbsp; <strong>CGPA:</strong> 8.6
+              </p>
+            </div>
+          </article>
+        </div>
 
       </div>
     </section>
@@ -502,7 +574,7 @@
        FOOTER
        ============================================================ -->
   <footer role="contentinfo">
-    <p class="footer-copy">© 2025 Amit Gautam · New Delhi, India</p>
+    <p class="footer-copy">© 2026 Amit Gautam · New Delhi, India</p>
     <nav class="footer-links" aria-label="Social links">
       <!-- REPLACE: update href with your actual LinkedIn URL -->
       <a href="https://linkedin.com/in/amitgautam" 
